@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\URL;
 
 
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -33,7 +34,9 @@ class AppServiceProvider extends ServiceProvider
 
 
 //        URL::forceScheme('https');
-        URL::forceScheme('https');
+        if (env('APP_ENV') !== 'local') {
+            URL::forceScheme('https');
+        }
 
 
     }
