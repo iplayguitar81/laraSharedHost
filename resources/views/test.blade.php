@@ -80,7 +80,7 @@
     });
 
 
-    var vm = new Vue({
+    const output = new Vue({
         el: '#output',
 
         data: {
