@@ -53,35 +53,7 @@
 <script>
 
     const app = new Vue({
-        el: '#app'
-
-//        data: {
-//                articles: [],
-//                article: {
-//                    id: '',
-//                    title: '',
-//                    body: ''
-//        },
-//            article_id: '',
-//            pagination: {},
-//            edit: false
-//
-//        },
-//        created: function(){ this.fetchArticles();},
-//        methods: {
-//           fetchArticles(){
-//               fetch('api/articles')
-//                   .then(res => res.json())
-//               .then(res => {
-//                   this.articles=res.data;
-//               })
-//            }
-//        }
-    });
-
-
-    const output = new Vue({
-        el: '#output',
+        el: '#app',
 
         data: {
                 articles: [],
@@ -106,7 +78,36 @@
             }
         },
         template: '<div class="card card-body" v-for="article in articles" v-bind:key="article.id"><h3>{{article.title}}</h3></div>'
-    })
+    });
+
+
+    {{--const output = new Vue({--}}
+        {{--el: '#output',--}}
+
+        {{--data: {--}}
+                {{--articles: [],--}}
+                {{--article: {--}}
+                    {{--id: '',--}}
+                    {{--title: '',--}}
+                    {{--body: ''--}}
+        {{--},--}}
+            {{--article_id: '',--}}
+            {{--pagination: {},--}}
+            {{--edit: false--}}
+
+        {{--},--}}
+        {{--created: function(){ this.fetchArticles();},--}}
+        {{--methods: {--}}
+           {{--fetchArticles(){--}}
+               {{--fetch('api/articles')--}}
+                   {{--.then(res => res.json())--}}
+               {{--.then(res => {--}}
+                   {{--this.articles=res.data;--}}
+               {{--})--}}
+            {{--}--}}
+        {{--},--}}
+        {{--template: '<div class="card card-body" v-for="article in articles" v-bind:key="article.id"><h3>{{article.title}}</h3></div>'--}}
+    {{--})--}}
 
 
 
