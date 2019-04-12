@@ -12,7 +12,7 @@
     <!-- Styles -->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
 </head>
 <body>
 
@@ -28,18 +28,8 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script src="/js/main.js"></script>
 
-<script>
-
-
-
-    const app = new Vue({
-        el: '#app'
-    });
-
-//    require('/js/components/Articles.vue');
-    Vue.component('articles', require('/js/components/Articles.vue').default);
-
-</script>
 </body>
 </html>
