@@ -38,7 +38,7 @@
     });
 
 //    require('/js/components/Articles.vue');
-    Vue.component('example-component', require('/js/components/Articles.vue').default);
+    Vue.component('articles', require('/js/components/Articles.vue').default);
 
 </script>
 </body>
