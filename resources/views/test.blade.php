@@ -29,7 +29,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-<script src="/js/Articles.vue.js"></script>
+<script src="/js/components/Articles.vue.js"></script>
 
 <script>
 
