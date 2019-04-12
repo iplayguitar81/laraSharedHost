@@ -27,11 +27,8 @@ Vue.component("articles", {
         }
     },
 
+                        }
 
 
 
-    }
-
-
-
-);
+            );
