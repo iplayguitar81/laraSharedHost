@@ -1,8 +1,8 @@
 Vue.component("articles", {
         // props: ['articles'],
-        template: '<div> <h2>Articles</h2> <div class="card card-body" v-for="article in articles" v-bind:key="article.id"><h3>@{{article.title}}</h3></div></div>',
+        template: '<div> <h2>Articles</h2> <div class="card card-body" v-for="article in fetchArticles" v-bind:key="article.id"><h3>@{{article.title}}</h3></div></div>',
 
-    data: {
+    props: {
         articles: [],
         article: {
             id: '',
@@ -14,8 +14,8 @@ Vue.component("articles", {
         edit: false
 
     },
-    created: function(){ this.fetchArticles();},
-    methods: {
+    // created: function(){ this.fetchArticles();},
+    computed: {
         fetchArticles(){
             fetch('api/articles')
                 .then(res => res.json())
