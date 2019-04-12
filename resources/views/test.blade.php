@@ -25,6 +25,7 @@
 <div id="app">
 
     <div class="container">
+        <navbar></navbar>
         <articles>
 
         </articles>
