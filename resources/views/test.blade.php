@@ -46,7 +46,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-<script src="/js/components/Articles.vue.js"></script>
+{{--<script src="/js/components/Articles.vue.js"></script>--}}
 <script src="/js/components/Navbar.vue.js"></script>
 
 
@@ -73,8 +73,8 @@
                fetch('api/articles')
                    .then(res => res.json())
                .then(res => {
-//                   this.articles=res.data;
-                   console.log(res.data);
+                 this.articles=res.data;
+                   //console.log(res.data);
                })
             }
         },
@@ -82,34 +82,15 @@
     });
 
 
-    {{--const output = new Vue({--}}
-        {{--el: '#output',--}}
+    Vue.component("articles", {
 
-        {{--data: {--}}
-                {{--articles: [],--}}
-                {{--article: {--}}
-                    {{--id: '',--}}
-                    {{--title: '',--}}
-                    {{--body: ''--}}
-        {{--},--}}
-            {{--article_id: '',--}}
-            {{--pagination: {},--}}
-            {{--edit: false--}}
+            template: "<div> <h2>Articles</h2> <div class='card card-body' v-for='article in articles' v-bind:key='article.id'><h3>{{article.title}}</h3></div></div>",
 
-        {{--},--}}
-        {{--created: function(){ this.fetchArticles();},--}}
-        {{--methods: {--}}
-           {{--fetchArticles(){--}}
-               {{--fetch('api/articles')--}}
-                   {{--.then(res => res.json())--}}
-               {{--.then(res => {--}}
-                   {{--this.articles=res.data;--}}
-               {{--})--}}
-            {{--}--}}
-        {{--},--}}
-        {{--template: '<div class="card card-body" v-for="article in articles" v-bind:key="article.id"><h3>{{article.title}}</h3></div>'--}}
-    {{--})--}}
 
+        }
+
+
+    );
 
 
 </script>
