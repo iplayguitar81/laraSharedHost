@@ -31,6 +31,8 @@
 
 <script>
 
+    Vue.component('example-component', require('./components/Articles.vue').default);
+
     const app = new Vue({
         el: '#app'
     });
