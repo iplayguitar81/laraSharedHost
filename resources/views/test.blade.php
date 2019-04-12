@@ -18,9 +18,23 @@
 
 <div id="app">
 
+    <div class="container">
+        <articles>
+
+        </articles>
+
+    </div>
+
 
 </div>
 
 
+<script>
+
+    const app = new Vue({
+        el: '#app'
+    });
+
+</script>
 </body>
 </html>
