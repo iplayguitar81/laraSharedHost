@@ -30,7 +30,6 @@
 
         <articles>
 
-            <div class="card card-body" v-for="article in articles" v-bind:key="article.id"><h3>{{article.title}}</h3></div>
         </articles>
 
     </div>
