@@ -33,6 +33,9 @@
 
 <script>
 
+    const app = new Vue({
+        el: '#app'
+    });
 
 </script>
 
