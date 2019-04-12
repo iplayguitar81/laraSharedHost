@@ -73,11 +73,12 @@
                fetch('api/articles')
                    .then(res => res.json())
                .then(res => {
-                   this.articles=res.data;
+//                   this.articles=res.data;
+                   console.log(res.data);
                })
             }
         },
-        template: '<div class="card card-body" v-for="article in articles" v-bind:key="article.id"><h3>{{article.title}}</h3></div>'
+        {{--template: '<div class="card card-body" v-for="article in articles" v-bind:key="article.id"><h3>{{article.title}}</h3></div>'--}}
     });
 
 
