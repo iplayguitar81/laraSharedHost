@@ -24,8 +24,10 @@
 
 <div id="app">
 
+    <navbar></navbar>
+
     <div class="container">
-        <navbar></navbar>
+
         <articles>
 
         </articles>
