@@ -31,11 +31,14 @@
 
 <script>
 
-     require('/js/components/Articles.vue');
+
 
     const app = new Vue({
         el: '#app'
     });
+
+//    require('/js/components/Articles.vue');
+    Vue.component('example-component', require('/js/components/Articles.vue').default);
 
 </script>
 </body>
