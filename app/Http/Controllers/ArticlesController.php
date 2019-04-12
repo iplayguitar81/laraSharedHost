@@ -23,7 +23,7 @@ class ArticlesController extends Controller
     {
         //get articles
 
-        $articles = Article::paginate(15);
+        $articles = Article::paginate(5);
 
         //return collection of articles as a resource...
 
