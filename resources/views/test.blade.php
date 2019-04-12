@@ -50,8 +50,47 @@
 <script>
 
     const app = new Vue({
-        el: '#app'
+        el: '#app',
+
+        data: {
+                articles: [],
+                article: {
+                    id: '',
+                    title: '',
+                    body: ''
+        },
+            article_id: '',
+            pagination: {},
+            edit: false
+
+        },
+        created: function(){ this.fetchArticles();},
+        methods: {
+           fetchArticles(){
+
+               fetch('api/articles')
+                   .then(res => res.json())
+               .then(res => {
+
+               })
+            }
+        }
     });
+
+
+
+//        data() {
+//            return {
+//                articles: [],
+//                article: {
+//                    id: '',
+//                    title: '',
+//                    body: ''
+//
+//                },
+//
+//            }
+//        }
 
 
 
