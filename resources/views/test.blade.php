@@ -32,6 +32,18 @@
 
         </articles>
 
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Title" v-model="article.title">
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Body" v-model="article.body"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-md btn-success">Save</button>
+        </form>
+
         <nav aria-label="Page navigation example">
             <ul class="pagination">
                 <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item"><a class="page-link" href="#" @click="fetchArticles(pagination.prev_page_url)">Previous</a></li>
