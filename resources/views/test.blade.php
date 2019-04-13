@@ -3,21 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>LaraVue</title>
-
-    <!-- Fonts -->
-
-
-    <!-- Styles -->
-
     <meta name="csrf-token" content="{{csrf_token()}}">
     <script>window.Laravel = {csrfToken: '{{csrf_token()}}'}</script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-
 
 </head>
 <body>
@@ -61,6 +51,11 @@
             <div class="mx-auto">
                 <button @click="deleteArticle(article.id)" class="btn btn-md btn-danger">Delete</button>
             </div>
+            <div class="mx-auto">
+                <button @click="updateArticle(article.id)" class="btn btn-md btn-warning">Update</button>
+            </div>
+
+
 
         </div>
 
