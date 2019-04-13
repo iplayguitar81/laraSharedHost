@@ -50,8 +50,7 @@
         <hr/>
             <div class="mx-auto">
                 <button @click="deleteArticle(article.id)" class="btn btn-md btn-danger">Delete</button>
-            </div>
-            <div class="mx-auto">
+
                 <button @click="updateArticle(article.id)" class="btn btn-md btn-warning">Update</button>
             </div>
 
