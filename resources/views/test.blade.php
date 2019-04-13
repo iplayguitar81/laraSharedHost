@@ -152,8 +152,24 @@
                 }
                 else {
                     //Update
+                    fetch('api/article', {
+                        method: 'put',
+                        body: JSON.stringify(this.article),
+                        headers: {
+                            'content-type': 'application/json'
+                        }
 
-                }
+                    })
+                        .then(res => res.json())
+                .then(data => {
+                        this.article.title ='';
+                    this.article.body='';
+                    alert('Article Updated!');
+                    this.fetchArticles();
+                })
+                .catch(err => console.log(err));
+
+                    }
             },
 
             updateArticle(article){
