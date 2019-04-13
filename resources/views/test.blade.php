@@ -90,6 +90,7 @@
                    prev_page_url: links.prev
                }
 
+                this.pagination = pagination;
             }
 
 
