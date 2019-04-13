@@ -89,7 +89,7 @@
                    next_page_url: links.next,
                    prev_page_url: links.prev
                },
-                   this.pagination = pagination;
+                  // this.pagination = pagination;
             }
 
         },
