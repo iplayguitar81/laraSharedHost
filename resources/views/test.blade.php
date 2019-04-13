@@ -51,7 +51,7 @@
             <div class="mx-auto">
                 <button @click="deleteArticle(article.id)" class="btn btn-md btn-danger">Delete</button>
 
-                <button @click="updateArticle(article.id)" class="btn btn-md btn-warning">Update</button>
+                <button @click="updateArticle(article)" class="btn btn-md btn-warning">Update</button>
             </div>
 
 
@@ -154,6 +154,17 @@
                     //Update
 
                 }
+            },
+
+            updateArticle(article){
+                this.edit = true;
+                this.article.id = article.id;
+                this.article_id = article.id;
+                this.article.title = article.title;
+                this.article.body = article.body;
+
+
+
             }
 
 
