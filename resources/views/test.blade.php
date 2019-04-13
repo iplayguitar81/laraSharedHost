@@ -69,14 +69,29 @@
         },
         created: function(){ this.fetchArticles();},
         methods: {
-           fetchArticles(){
-               fetch('api/articles')
+           fetchArticles(page_url){
+               let vm = this;
+               page_url = page_url || '/api/articles'
+               fetch(page_url)
                    .then(res => res.json())
                .then(res => {
                  this.articles=res.data;
+                 vm.makePagination(res.meta, res.links);
                    //console.log(res.data);
                })
+               .catch(err => console.log(err));
+            },
+
+            makePagination(meta, links){
+               let pagination = {
+                   current_page: meta.current_page,
+                   last_page: meta.last_page,
+                   next_page_url: links.next,
+                   prev_page_url: links.prev
+               },
+                   this.pagination = pagination;
             }
+
         },
     });
 
