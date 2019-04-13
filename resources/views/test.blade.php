@@ -134,6 +134,32 @@
                     })
                         .catch(err => console.log(err));
                 }
+            },
+
+            addArticle() {
+                if(this.edit === false) {
+                   //Add
+                    fetch('api/article', {
+                       method: 'post',
+                       body: JSON.stringify(this.article),
+                       headers: {
+                           'content-type': 'application/json'
+                       }
+
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            this.article.title ='';
+                            this.article.body='';
+                            alert('Article Created');
+                            this.fetchArticles();
+                    })
+                        .catch(err => console.log(err));
+                }
+                else {
+                    //Update
+
+                }
             }
 
 
