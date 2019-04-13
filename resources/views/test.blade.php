@@ -109,9 +109,9 @@
 
             deleteArticle(id) {
                 if(confirm('Are You Sure?')){
-                    fetch('api/article/'+id+', {
+                    fetch('api/article/${id}', {
                       method: 'delete'
-                    } )
+                    })
                         .then(res => res.json())
                         .then(data => {
                             alert('Article Deleted');
