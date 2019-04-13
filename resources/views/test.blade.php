@@ -112,7 +112,7 @@
                     fetch('api/article/${id}', {
                       method: 'delete'
                     })
-                        .then(res => res.json())
+                        .then(res => res.json{})
                         .then(data => {
                             alert('Article Deleted');
                             this.fetchArticles();
