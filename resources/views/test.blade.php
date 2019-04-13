@@ -179,8 +179,6 @@
                 this.article.title = article.title;
                 this.article.body = article.body;
 
-
-
             }
 
 
