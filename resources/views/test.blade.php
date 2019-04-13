@@ -88,9 +88,10 @@
                    last_page: meta.last_page,
                    next_page_url: links.next,
                    prev_page_url: links.prev
-               },
-                  // this.pagination = pagination;
+               }
+
             }
+
 
         },
     });
