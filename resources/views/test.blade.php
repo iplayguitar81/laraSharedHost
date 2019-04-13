@@ -18,9 +18,7 @@
 
     <div class="container">
 
-        <articles>
-
-        </articles>
+        <articles></articles>
 
         <form @submit.prevent="addArticle()" class="mb-3">
             <div class="form-group">
