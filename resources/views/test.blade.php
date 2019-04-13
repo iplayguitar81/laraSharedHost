@@ -175,7 +175,7 @@
             updateArticle(article){
                 this.edit = true;
                 this.article.id = article.id;
-                this.article_id = article.id;
+                this.article.article_id = article.id;
                 this.article.title = article.title;
                 this.article.body = article.body;
 
