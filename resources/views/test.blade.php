@@ -36,7 +36,7 @@
             <ul class="pagination">
                 <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item"><a class="page-link" href="#">Previous</a></li>
 
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
         </nav>
 
