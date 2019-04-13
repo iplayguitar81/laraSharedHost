@@ -46,7 +46,10 @@
             <h3>@{{article.title}}</h3>
             <p>@{{ article.body }}</p>
         <hr/>
-            <button @click="deleteArticle(article.id)" class="btn btn-danger">Delete</button>
+            <div class="mx-auto">
+                <button @click="deleteArticle(article.id)" class="btn btn-md btn-danger">Delete</button>
+            </div>
+
         </div>
 
     </div>
