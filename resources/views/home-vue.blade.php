@@ -68,13 +68,16 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+<script src="/js/routes.js"></script>
 
 <script src="/js/components/Articles.vue.js"></script>
 <script src="/js/components/Navbar.vue.js"></script>
 
 
+
+
 <script>
-    import routes from '/js/routes';
+
 
     const app = new Vue({
         el: '#app',
