@@ -11,12 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/spa-crud', function () {
     return view('test');
 })->middleware('power');
 
-Route::get('/not-allowed', function () {
-    return view('not-allowed');
+Route::get('/', function () {
+    return view('home-vue');
 });
 
 //Route::resource('article','ArticlesController');
