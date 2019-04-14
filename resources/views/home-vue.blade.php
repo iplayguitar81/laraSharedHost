@@ -74,9 +74,12 @@
 
 
 <script>
+    import routes from '/js/routes';
 
     const app = new Vue({
         el: '#app',
+
+        router: new VueRouter(routes),
 
         data: {
             articles: [],
