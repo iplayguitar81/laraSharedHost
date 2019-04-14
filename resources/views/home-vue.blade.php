@@ -18,7 +18,12 @@
 
     <div class="container">
 
-        <router-view> </router-view>
+        <div class="primary flex-1">
+
+            {{--think of this (router-view) as the yield concept in rails or laravel...--}}
+            <router-view> </router-view>
+
+        </div>
         <router-link class="text-black" to="/zeppelin">Zeppelin</router-link>
         <router-link class="text-black" to="/about">About</router-link>
 
