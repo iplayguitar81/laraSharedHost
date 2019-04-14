@@ -1,6 +1,6 @@
 
 
-const Home = { template: '<div>HOME</div>' }
+const Zeppelin = { template: '<div>ZEPPELIN</div>' }
 const About = { template: '<div>ABOUT</div>' }
 
 const routes = [
@@ -12,8 +12,8 @@ const routes = [
         // },
 
         {
-            path: '/',
-            component: Home
+            path: '/zeppelin',
+            component: Zeppelin
         },
 
         {

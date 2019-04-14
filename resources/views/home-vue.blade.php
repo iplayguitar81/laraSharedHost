@@ -18,6 +18,12 @@
 
     <div class="container">
 
+        <router-view> </router-view>
+        <router-link class="text-black" to="/zeppelin">Zeppelin</router-link>
+        <router-link class="text-black" to="/about">About</router-link>
+
+
+
         <articles></articles>
 
         {{--<form @submit.prevent="addArticle()" class="mb-3">--}}
