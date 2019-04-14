@@ -11,14 +11,16 @@
 
 </head>
 <body>
-<h1>Welcome {{$user_name}}</h1>
+
 <div id="app">
 
     <navbar></navbar>
 
+    <h1>Welcome {{$user_name}}</h1>
     <div class="container">
 
         <articles></articles>
+
 
         <form @submit.prevent="addArticle()" class="mb-3">
             <div class="form-group">
