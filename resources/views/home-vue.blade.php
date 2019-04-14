@@ -103,16 +103,16 @@
                     .catch(err => console.log(err));
             },
 
-//            makePagination(meta, links){
-//                let pagination = {
-//                    current_page: meta.current_page,
-//                    last_page: meta.last_page,
-//                    next_page_url: links.next,
-//                    prev_page_url: links.prev
-//                }
-//
-//                this.pagination = pagination;
-//            },
+            makePagination(meta, links){
+                let pagination = {
+                    current_page: meta.current_page,
+                    last_page: meta.last_page,
+                    next_page_url: links.next,
+                    prev_page_url: links.prev
+                }
+
+                this.pagination = pagination;
+            },
 //
 //            deleteArticle(id) {
 //                if(confirm('Are You Sure?')){
