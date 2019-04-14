@@ -41,7 +41,7 @@ class User extends Authenticatable
 
 
     public function isPower() {
-        return (\Auth::check() && $this->power == 1);
+        return (Auth::check() && $this->power == 1);
     }
 
 }

@@ -17,7 +17,7 @@ class amPower
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->power == 1) {
+        if (auth()->user()->isPower()) {
 
             return redirect('not-allowed');
         }
