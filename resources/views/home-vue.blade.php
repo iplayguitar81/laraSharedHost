@@ -74,7 +74,7 @@
     const app = new Vue({
         el: '#app',
 
-        router: new VueRouter(routes),
+        router: new VueRouter({ mode: 'history', routes }),
 
         data: {
             articles: [],
