@@ -12,13 +12,16 @@
 */
 
 Route::get('/spa-crud', function () {
-    return view('spa-crud');
+
+    $user_name = auth()->user()->name;
+
+    return view('spa-crud', compact('user_name'));
 })->middleware('power');
 
 Route::get('/', function () {
-    $user_name = auth()->user()->name;
 
-    return view('home-vue', compact('user_name'));
+
+    return view('home-vue');
 });
 
 //Route::resource('article','ArticlesController');
