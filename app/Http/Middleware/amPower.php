@@ -15,11 +15,14 @@ class amPower
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next, $guard = null)
+    public function handle($request, Closure $next)
     {
-        if (Auth::guard($guard)->check() && Auth::user()->power == 1) {
-            return $next($request);
+        if (Auth::user()->power == 1) {
+
+            return redirect('/not-allowed');
         }
-        return redirect('/not-allowed');
+
+
+        return $next($request);
     }
 }
