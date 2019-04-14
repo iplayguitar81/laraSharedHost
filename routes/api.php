@@ -20,20 +20,20 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 //list all articles
 
-Route::get('articles', 'ArticlesController@index')->middleware('power');
+Route::get('articles', 'ArticlesController@index');
 
 //list single articles
 
-Route::get('article/{id}', 'ArticlesController@show')->middleware('power');
+Route::get('article/{id}', 'ArticlesController@show');
 
 //create new article
 
-Route::post('article', 'ArticlesController@store')->middleware('power');
+Route::post('article', 'ArticlesController@store');
 
 //update article
 
-Route::put('article', 'ArticlesController@store')->middleware('power');
+Route::put('article', 'ArticlesController@store');
 
 //delete article
 
-Route::delete('article/{id}', 'ArticlesController@destroy')->middleware('power');
+Route::delete('article/{id}', 'ArticlesController@destroy');

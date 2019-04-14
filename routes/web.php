@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('test');
+    return view('test')->middleware('power');
 });
 
 Route::get('/not-allowed', function () {
