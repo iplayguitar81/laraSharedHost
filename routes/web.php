@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('test');
 });
 
+Route::get('/not-allowed', function () {
+    return view('not-allowed');
+});
+
 //Route::resource('article','ArticlesController');
 
 Auth::routes();
