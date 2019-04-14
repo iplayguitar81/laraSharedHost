@@ -16,7 +16,7 @@
 
     <navbar></navbar>
 
-    <h1>Welcome {{$user_name}}</h1>
+    <h1 class="text-center">Welcome {{$user_name}}</h1>
     <div class="container">
 
         <articles></articles>
