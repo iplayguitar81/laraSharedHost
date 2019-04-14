@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('test')->middleware('power');
-});
+    return view('test');
+})->middleware('power');
 
 Route::get('/not-allowed', function () {
     return view('not-allowed');
