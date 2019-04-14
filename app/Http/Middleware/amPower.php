@@ -19,7 +19,7 @@ class amPower
     {
         if (Auth::user()->power == 1) {
 
-            return redirect('/not-allowed');
+            return redirect('not-allowed');
         }
 
 
