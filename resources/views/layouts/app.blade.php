@@ -67,7 +67,7 @@
 </head>
 <body>
 
-Test this out...
+@yield('content')
 
 </body>
 </html>
