@@ -11,7 +11,7 @@
 
 </head>
 <body>
-
+<h1>Welcome {{$user_name}}</h1>
 <div id="app">
 
     <navbar></navbar>
